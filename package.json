@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "fmt:check": "prettier -c .",
+    "fmt:fix": "prettier -w .",
+    "fmt": "pnpm fmt:fix"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.2.0",
