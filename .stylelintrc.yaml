@@ -11,8 +11,7 @@ rules:
   - csstools/value-no-unknown-custom-properties: true
   - plugin/declaration-block-no-ignored-properties: true
   - plugin/no-unsupported-browser-features:
-    - true
-    - browsers:
-      - " > 5%"
+      - true
+      - browsers:
+          - " > 5%"
   - prettier/prettier: true
-
