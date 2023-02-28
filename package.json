@@ -8,6 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "fmt:check": "prettier -c .",
     "fmt:fix": "prettier -w .",
     "fmt": "pnpm fmt:fix"
