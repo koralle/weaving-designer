@@ -12,12 +12,15 @@
     "lint:fix": "eslint . --fix",
     "fmt:check": "prettier -c .",
     "fmt:fix": "prettier -w .",
-    "fmt": "pnpm fmt:fix"
+    "fmt": "pnpm fmt:fix",
+    "stylelint": "stylelint --ignore-path .gitignore \"src/**/*.css\"",
+    "stylelint:fix": "pnpm stylelint -- --fix"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "stylelint-csstree-validator": "^2.1.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.2.2",
@@ -37,6 +40,14 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-vitest": "^0.0.48",
     "prettier": "^2.8.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-no-unsupported-browser-features": "^6.1.0",
+    "stylelint-prettier": "^3.0.0",
+    "stylelint-value-no-unknown-custom-properties": "^4.0.0",
     "typescript": "^4.6.4",
     "vite": "^4.0.0",
     "vitest": "^0.29.1"
