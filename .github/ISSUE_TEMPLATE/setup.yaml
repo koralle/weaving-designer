@@ -1,0 +1,30 @@
+name: Setup
+description: 何かしらの環境構築やら、パッケージ・モジュールを導入する際のIssue
+
+assignees:
+  - koralle
+body:
+  - type: input
+    id: goal
+    attributes:
+      label: Goal
+      description: Issueのゴールを書く
+      placeholder: XXXの導入が完了していること。
+
+  - type: input
+    id: summary 
+    attributes:
+      label: Summary
+      description: 概要を書く。
+      placeholder: XXXを導入してYYYを実現する。
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: Detail
+      description: 詳細を書く。
+      placeholder: |
+        XXXは↓のURLからダウンロードできる。
+        https://example.com/downloads
+        このXXXを使って、↓のURLを参考にYYYを実現する。
+        https://zenn.dev/hogehoge/fugafugafuga
