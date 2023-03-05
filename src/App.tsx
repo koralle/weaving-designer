@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Welcome to Tauri!</h1>
+      <h1 className="bg-app-primary-color-value">Welcome to Tauri!</h1>
 
       <div className="row">
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
