@@ -1,0 +1,17 @@
+extends:
+  - stylelint-config-standard
+  - stylelint-config-recess-order
+plugins:
+  - stylelint-value-no-unknown-custom-properties
+  - stylelint-csstree-validator
+  - stylelint-declaration-block-no-ignored-properties
+  - stylelint-no-unsupported-browser-features
+  - stylelint-prettier
+rules:
+  - csstools/value-no-unknown-custom-properties: true
+  - plugin/declaration-block-no-ignored-properties: true
+  - plugin/no-unsupported-browser-features:
+      - true
+      - browsers:
+          - " > 5%"
+  - prettier/prettier: true
