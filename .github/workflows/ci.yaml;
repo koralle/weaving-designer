@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  eslint:
+    runs-on: ubuntu-22.04
+
+    name: ESLint
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+
+      - name: Setup with pnpm
+        uses: ./.github/actions/setup-frontend-with-pnpm
+        with:
+          platform: ubuntu-22.04
+
+      - name: ESLint
+        working-directory: .
+        run: |
+          pnpm run lint
+
+  prettier:
+    runs-on: ubuntu-22.04
+    needs: eslint
+
+    name: Prettier
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+
+      - name: Setup with pnpm
+        uses: ./.github/actions/setup-frontend-with-pnpm
+        with:
+          platform: ubuntu-22.04
+
+      - name: Prettier
+        working-directory: .
+        run: |
+          pnpm run fmt:check
+
+  chromatic-deployment:
+    runs-on: ubuntu-22.04
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+
+      - name: Setup with pnpm
+        uses: ./.github/actions/setup-front-end-with-pnpm
+        with:
+          platform: ubuntu-22.04
+
+      - name: Publish to Chromatic
+        uses: chromaui/actions@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
