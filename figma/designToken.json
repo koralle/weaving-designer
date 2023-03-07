@@ -1,96 +1,23 @@
 {
-  "fontFamily": {
-    "default": {
-      "value": "Noto Sans JP",
-      "type": "fontFamilies"
-    }
-  },
-  "fontSize": {
-    "font-size-1": {
-      "value": {
-        "lineHeight": "1.5rem",
-        "fontSize": "1.25rem"
-      },
-      "type": "typography",
-      "description": "デフォルトのフォントサイズとする"
-    },
-    "font-size-2": {
-      "value": {
-        "lineHeight": "1.75rem",
-        "fontSize": "1.5rem"
-      },
-      "type": "typography"
-    },
-    "font-size-3": {
-      "value": {
-        "lineHeight": "2.25rem",
-        "fontSize": "2.0rem"
-      },
-      "type": "typography"
-    },
-    "font-size-4": {
-      "value": {
-        "lineHeight": "3.0rem",
-        "fontSize": "2.5rem"
-      },
-      "type": "typography"
-    },
-    "font-size-5": {
-      "value": {
-        "lineHeight": "3.5rem",
-        "fontSize": "3.0rem"
-      },
-      "type": "typography"
-    },
-    "font-size-6": {
-      "value": {
-        "lineHeight": "3.75rem",
-        "fontSize": "3.5rem"
-      },
-      "type": "typography"
-    },
-    "font-size-7": {
-      "value": {
-        "lineHeight": "4.5rem",
-        "fontSize": "4.0rem"
-      },
-      "type": "typography"
-    },
-    "font-size-8": {
-      "value": {
-        "lineHeight": "5.0rem",
-        "fontSize": "4.5rem"
-      },
-      "type": "typography"
-    }
-  },
   "colors": {
-    "app-primary-color": {
+    "white": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "primary": {
       "value": "#ffa8b8",
       "type": "color"
     },
-    "app-brand-color": {
-      "value": "#ffa8b8",
-      "type": "color"
-    },
-    "app-secondary-color": {
+    "secondary": {
       "value": "#dcdcdc",
       "type": "color"
     },
-    "app-info-color": {
+    "info": {
       "value": "#1a1a1a",
       "type": "color"
     },
-    "app-destructive-color": {
+    "destructive": {
       "value": "#dc2626",
-      "type": "color"
-    },
-    "app-primary-text-color": {
-      "value": "#444444",
-      "type": "color"
-    },
-    "app-secondary-text-color": {
-      "value": "#181818",
       "type": "color"
     }
   }
