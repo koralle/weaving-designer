@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { invoke } from "@tauri-apps/api/tauri";
 import { useState } from "react";
 
@@ -34,9 +32,9 @@ function App() {
 
       <div className="row">
         <form
-          onSubmit={(e) => {
+          onSubmit={async (e) => {
             e.preventDefault();
-            greet();
+            await greet();
           }}
         >
           <input

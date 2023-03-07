@@ -8,10 +8,18 @@ plugins:
   - stylelint-no-unsupported-browser-features
   - stylelint-prettier
 rules:
-  - csstools/value-no-unknown-custom-properties: true
-  - plugin/declaration-block-no-ignored-properties: true
-  - plugin/no-unsupported-browser-features:
-      - true
-      - browsers:
-          - " > 5%"
-  - prettier/prettier: true
+  csstools/value-no-unknown-custom-properties: true
+  plugin/declaration-block-no-ignored-properties: true
+  plugin/no-unsupported-browser-features:
+    - true
+    - browsers:
+        - " > 5%"
+  prettier/prettier: true
+  at-rule-no-unknown:
+    - true
+    - ignoreAtRules:
+        - tailwind
+        - apply
+        - variants
+        - responsive
+        - screen

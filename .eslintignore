@@ -1,3 +1,4 @@
 storybook-static
 
 tailwind.config.cjs
+.storybook/preview.js
