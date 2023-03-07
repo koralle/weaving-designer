@@ -24,6 +24,24 @@ jobs:
         run: |
           pnpm run lint
 
+  stylelint:
+    runs-on: ubuntu-22.04
+
+    name: Stylelint
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+
+      - name: Setup with pnpm
+        uses: ./.github/actions/setup-front-end-with-pnpm
+        with:
+          platform: ubuntu-22.04
+
+      - name: Stylelint
+        working-directory: .
+        run: |
+          pnpm run stylelint
+
   prettier:
     runs-on: ubuntu-22.04
     needs: eslint
