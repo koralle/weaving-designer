@@ -1,6 +1,6 @@
 root: true
 ignorePatterns:
-  - '!.storybook'
+  - "!.storybook"
 extends:
   - eslint:recommended
   - plugin:import/recommended

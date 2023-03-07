@@ -12,7 +12,7 @@ body:
       placeholder: XXXの導入が完了していること。
 
   - type: input
-    id: summary 
+    id: summary
     attributes:
       label: Summary
       description: 概要を書く。
