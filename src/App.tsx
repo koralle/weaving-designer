@@ -34,9 +34,9 @@ function App() {
 
       <div className="row">
         <form
-          onSubmit={(e) => {
+          onSubmit={async (e) => {
             e.preventDefault();
-            greet();
+            await greet();
           }}
         >
           <input
