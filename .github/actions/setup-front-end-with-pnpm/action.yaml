@@ -1,13 +1,13 @@
-name: "Set up frontend with pnpm"
-description: "Set up frontend with pnpm"
+name: 'Set up frontend with pnpm'
+description: 'Set up frontend with pnpm'
 
 inputs:
   platform:
-    description: ""
+    description: ''
     required: true
 
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     # See: https://github.com/actions/setup-node
     - name: SetUp Node
