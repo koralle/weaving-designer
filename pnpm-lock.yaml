@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-icon/react': ^1.0.7
   '@storybook/addon-essentials': 7.0.0-beta.60
   '@storybook/addon-interactions': 7.0.0-beta.60
   '@storybook/addon-links': 7.0.0-beta.60
@@ -56,6 +57,7 @@ specifiers:
   vitest: ^0.29.1
 
 dependencies:
+  '@iconify-icon/react': 1.0.7_react@18.2.0
   '@tauri-apps/api': 1.2.0
   clsx: 1.2.1
   react: 18.2.0
@@ -1869,6 +1871,21 @@ packages:
     resolution:
       { integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA== }
     dev: true
+
+  /@iconify-icon/react/1.0.7_react@18.2.0:
+    resolution:
+      { integrity: sha512-+Gh2nzO+wfYxJ5fr9mvIc1+iIRhFZBI6NcEWmONQm2cFoqmH2Y2rvzztg+Az5tS+NppPKP2ux3Bbv7Jxj/zwGg== }
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      iconify-icon: 1.0.7
+      react: 18.2.0
+    dev: false
+
+  /@iconify/types/2.0.0:
+    resolution:
+      { integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg== }
+    dev: false
 
   /@istanbuljs/load-nyc-config/1.1.0:
     resolution:
@@ -7230,6 +7247,13 @@ packages:
       { integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw== }
     engines: { node: '>=10.17.0' }
     dev: true
+
+  /iconify-icon/1.0.7:
+    resolution:
+      { integrity: sha512-MxaO3Jhf3f5ymPWGHR9x74f90TNKcq1D+B2iGucGhVtqAgbC9EtM06kKiTGH2CKELNnexckwhrA3/+OpT4HKFw== }
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
 
   /iconv-lite/0.4.24:
     resolution:
