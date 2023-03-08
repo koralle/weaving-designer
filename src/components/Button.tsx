@@ -1,14 +1,7 @@
 import { ClassValue, clsx } from 'clsx';
 import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
 
-const appearance = {
-  primary: 'primary',
-  secondary: 'secondary',
-  info: 'info',
-  destructive: 'destructive',
-} as const;
-
-type Appearance = (typeof appearance)[keyof typeof appearance];
+import { Appearance } from '.';
 
 type Props = {
   appearance: Appearance;
