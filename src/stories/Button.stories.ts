@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from "../components/Button";
+import { Button } from '../components/Button';
 
 const meta = {
-  title: "Design System/Atoms/Button",
+  title: 'Design System/Atoms/Button',
   component: Button,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   args: {
-    appearance: "secondary",
-    children: "Button",
-    className: "",
+    appearance: 'secondary',
+    children: 'Button',
+    className: '',
   },
 } satisfies Meta<typeof Button>;
 
@@ -19,32 +19,32 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    appearance: "primary",
-    children: "Button",
-    className: "",
+    appearance: 'primary',
+    children: 'Button',
+    className: '',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    appearance: "secondary",
-    children: "Button",
-    className: "",
+    appearance: 'secondary',
+    children: 'Button',
+    className: '',
   },
 };
 
 export const Info: Story = {
   args: {
-    appearance: "info",
-    children: "Button",
-    className: "",
+    appearance: 'info',
+    children: 'Button',
+    className: '',
   },
 };
 
 export const Destructive: Story = {
   args: {
-    appearance: "destructive",
-    children: "Button",
-    className: "",
+    appearance: 'destructive',
+    children: 'Button',
+    className: '',
   },
 };
