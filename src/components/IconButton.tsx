@@ -1,3 +1,4 @@
+import { Icon, IconifyIcon } from '@iconify-icon/react';
 import { ClassValue, clsx } from 'clsx';
 import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
 
@@ -5,12 +6,13 @@ import { Appearance } from '.';
 
 type Props = {
   appearance: Appearance;
+  icon: string | IconifyIcon;
   children?: ReactNode;
   className?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button: FC<Props> = ({ appearance, children, className }: Props) => {
-  const baseStyle: ClassValue = `w-[180px] h-[48px] font-regular rounded-full`;
+const IconButton: FC<Props> = ({ appearance, icon = 'mdi:home', children, className }: Props) => {
+  const baseStyle: ClassValue = `w-[180px] h-[48px] font-regular rounded-full flex items-center gap-x-5 px-5`;
 
   const primaryStyle = {
     'bg-wd-primary text-wd-white': appearance === 'primary',
@@ -41,9 +43,10 @@ const Button: FC<Props> = ({ appearance, children, className }: Props) => {
         className
       )}
     >
+      <Icon inline icon={icon} width={24} height={24} />
       {children}
     </button>
   );
 };
 
-export { Button };
+export { IconButton };
