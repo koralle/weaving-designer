@@ -1,0 +1,52 @@
+name: UI
+description: Storybookを使いつつUIをゴニョゴニョする必要があるときに使う
+title: '[UI]: '
+assignees:
+  - koralle
+
+body:
+  - type: input
+    id: goal
+    attributes:
+      label: Goal
+      description: Issueのゴールを書く
+      placeholder: XXXするための一連のUIまたはコンポーネントが実装が完了していること。
+    validations:
+      required: true
+
+  - type: textarea
+    id: specification
+    attributes:
+      label: Specification
+      description: 細かいUIの仕様を書く
+      placeholder: |
+        押下すると~~~ができるボタン。
+    validations:
+      required: true
+
+  - type: textarea
+    id: interface
+    attributes:
+      label: Interface
+      description: UIの実装のInterfaceについて
+    validations:
+      required: true
+
+  - type: textarea
+    id: variants
+    attributes:
+      label: Variants
+      description: UIの差分（あれば）
+      placeholder: |
+        - [ ] Enabled
+        - [ ] Hover
+        - [ ] Active
+        - [ ] Focus
+        - [ ] Disabled
+
+  - type: input
+    id: figma-url
+    attributes:
+      label: Figma URL
+      description: FigmaのURL（あれば）
+      placeholder: https://www.figma.com
