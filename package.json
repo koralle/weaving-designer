@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@iconify-icon/react": "^1.0.7",
+    "@radix-ui/react-label": "^2.0.1",
     "@tauri-apps/api": "^1.2.0",
     "clsx": "^1.2.1",
     "next": "^13.2.4",
