@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "next dev -p 1420",
+    "build": "next build && next export -o dist",
     "preview": "vite preview",
     "tauri": "tauri",
     "lint": "eslint .",
