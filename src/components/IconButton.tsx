@@ -43,7 +43,12 @@ const IconButton: FC<Props> = ({ appearance, icon = 'mdi:home', children, classN
         className
       )}
     >
-      <Icon inline icon={icon} width={24} height={24} />
+      <Icon
+        inline
+        icon={icon}
+        width={24}
+        height={24}
+      />
       {children}
     </button>
   );
