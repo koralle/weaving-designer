@@ -38,6 +38,7 @@ specifiers:
   eslint-plugin-vitest: ^0.0.48
   next: ^13.2.4
   postcss: ^8.4.21
+  postcss-loader: ^7.1.0
   prettier: ^2.8.4
   prop-types: ^15.8.1
   react: ^18.2.0
@@ -102,6 +103,7 @@ devDependencies:
   eslint-plugin-storybook: 0.6.11_ycpbpc6yetojsgtrx3mwntkhsu
   eslint-plugin-vitest: 0.0.48_ycpbpc6yetojsgtrx3mwntkhsu
   postcss: 8.4.21
+  postcss-loader: 7.1.0_postcss@8.4.21
   prettier: 2.8.4
   prop-types: 15.8.1
   sass: 1.59.3
