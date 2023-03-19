@@ -6,3 +6,4 @@ jsxSingleQuote: true
 bracketSameLine: false
 arrowParens: 'avoid'
 endOfLine: lf
+singleAttributePerLine: true
