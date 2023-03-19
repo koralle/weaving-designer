@@ -1,27 +1,24 @@
-import type { StorybookConfig } from '@storybook/react-vite';
-import { mergeConfig } from 'vite';
+import type { StorybookConfig } from '@storybook/nextjs';
+import { resolve } from 'path';
 
-const config: StorybookConfig = {
+const storybookConfig: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   staticDirs: ['../public'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-interactions'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    'storybook-addon-next-router',
+  ],
   framework: {
-    name: '@storybook/react-vite',
+    name: '@storybook/nextjs',
     options: {
-      builder: {
-        viteConfigPath: './vite.config.ts',
-      },
+      nextConfigPath: resolve(__dirname, '../next.config.js'),
     },
-  },
-  features: {
-    storyStoreV7: true,
   },
   docs: {
     autodocs: 'tag',
   },
-  viteFinal: config => {
-    return mergeConfig(config, {});
-  },
 };
 
-export default config;
+export default storybookConfig;
