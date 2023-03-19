@@ -45,6 +45,7 @@ specifiers:
   sass: ^1.59.3
   sass-loader: ^13.2.1
   storybook: ^7.0.0-beta.55
+  storybook-addon-next-router: ^3.0.4
   style-loader: ^3.3.2
   stylelint: ^15.2.0
   stylelint-config-prettier: ^9.0.5
@@ -106,6 +107,7 @@ devDependencies:
   sass: 1.59.3
   sass-loader: 13.2.1_sass@1.59.3
   storybook: 7.0.0-beta.55
+  storybook-addon-next-router: 3.0.4_xgtem7qgu4sll6ycudqkprncey
   style-loader: 3.3.2
   stylelint: 15.2.0
   stylelint-config-prettier: 9.0.5_stylelint@15.2.0
@@ -11250,6 +11252,24 @@ packages:
 
   /store2/2.14.2:
     resolution: {integrity: sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==}
+    dev: true
+
+  /storybook-addon-next-router/3.0.4_xgtem7qgu4sll6ycudqkprncey:
+    resolution: {integrity: sha512-uoUREAUtU/ZsHAr5tnL9Rp43g2Ic1PyduJWOQj9MhF3wQqNxOcFGgG+TId9VjFqyDh5m1KUPDsOJIYeSQMUPLQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@storybook/addon-actions': ^6.0.0
+      '@storybook/addons': ^6.0.0
+      '@storybook/client-api': ^6.0.0
+      next: ^9.0.0 || ^10.0.0 || ^11.0.0
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@storybook/addons': 7.0.0-beta.60_biqbaboplfbrettd7655fr4n2y
+      '@storybook/client-api': 7.0.0-beta.60
+      next: 13.2.4_dpxg4zawgzznnxdt7it3f5d76m
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: true
 
   /storybook/7.0.0-beta.55:
