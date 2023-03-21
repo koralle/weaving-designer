@@ -33,6 +33,7 @@ plugins:
   - react
   - jsx-a11y
   - vitest
+  - react-hooks
 rules:
   react/jsx-uses-react: off
   react/jsx-in-jsx-scope: off
@@ -52,6 +53,10 @@ rules:
       varsIgnorePattern: ^_
   simple-import-sort/imports: error
   simple-import-sort/exports: error
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps:
+    - warn
+    - additionalHooks: (useRecoidCallback|useRecoilTransaction_UNSTABLE)
 settings:
   react:
     createClass: createReactClass
