@@ -9,7 +9,7 @@ type Props = {
   className?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button: FC<Props> = ({ appearance, children, className }: Props) => {
+const Button: FC<Props> = ({ appearance, children, className, ...props }: Props) => {
   const baseStyle: ClassValue = `w-[180px] h-[48px] font-regular rounded-full`;
 
   const primaryStyle = {
@@ -40,6 +40,7 @@ const Button: FC<Props> = ({ appearance, children, className }: Props) => {
         baseStyle,
         className
       )}
+      {...props}
     >
       {children}
     </button>
