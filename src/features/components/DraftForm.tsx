@@ -20,7 +20,7 @@ import {
   mintreadle,
   minWidth,
 } from '../../schemas/Draft';
-import { draftState } from '../atoms/createNewDraft';
+import { draftState } from '../atoms/draft';
 
 const DraftForm: FC = () => {
   const {

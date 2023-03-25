@@ -8,7 +8,7 @@ import { useRecoilValue, useSetRecoilState } from 'recoil';
 
 import { Button } from '../../components/Button';
 import { SelectField } from '../../components/Select';
-import { draftState } from '../../features/atoms/createNewDraft';
+import { draftState } from '../../features/atoms/draft';
 import {
   defaultHeddle,
   defaultHeight,

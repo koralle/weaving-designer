@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { FC, HTMLAttributes } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { draftState } from '../atoms/createNewDraft';
+import { draftState } from '../atoms/draft';
 import { EditorGrid } from './EditorGrid';
 import { TieUpGrid } from './TieUpGrid';
 import { WarpColorPalette } from './WarpColorPalette';
