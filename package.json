@@ -19,6 +19,8 @@
     "chromatic": "npx chromatic "
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@iconify-icon/react": "^1.0.7",
     "@tauri-apps/api": "^1.2.0",
     "clsx": "^1.2.1",
