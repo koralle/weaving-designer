@@ -34,6 +34,8 @@ plugins:
   - jsx-a11y
   - vitest
   - react-hooks
+  - jest-dom
+  - testing-library
 rules:
   react/jsx-uses-react: off
   react/jsx-in-jsx-scope: off
@@ -72,3 +74,9 @@ overrides:
     rules:
       import/no-default-export: off
       import/prefer-default-export: off
+  - files:
+      - '**/__tests__/**/*.+(ts|tsx|js)'
+      - '**/?(*.)+(spec|test).+(ts|tsx|js)'
+    extends:
+      - plugin:jest-dom/recommended
+      - plugin:testing-library/react
