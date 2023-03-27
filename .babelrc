@@ -7,8 +7,20 @@
         "useBuiltIns": "usage",
         "corejs": "3",
         "modules": false,
-        "targets": { "chrome": "100" }
+        "targets": {
+          "chrome": "100"
+        }
+      }
+    ],
+    [
+      "next/babel",
+      {
+        "preseet-react": {
+          "runtime": "automatic",
+          "importSource": "@emotion/react"
+        }
       }
     ]
-  ]
+  ],
+  "plugins": ["@emotion/babel-plugin"]
 }

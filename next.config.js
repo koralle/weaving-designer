@@ -8,6 +8,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  compiler: {
+    emotion: true,
+  },
 };
 
 export default nextConfig;
