@@ -62,6 +62,7 @@
     "@vitest/coverage-c8": "^0.29.7",
     "@vitest/ui": "^0.29.7",
     "autoprefixer": "^10.4.13",
+    "axe-playwright": "^1.2.3",
     "chromatic": "^6.17.1",
     "css-loader": "^6.7.3",
     "eslint": "^8.35.0",
