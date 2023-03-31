@@ -19,6 +19,13 @@ export const parameters = {
     Provider: RouterContext.Provider,
     locale: 'en',
   },
+  controls: {
+    expanded: true,
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
 };
 
 export default preview;
