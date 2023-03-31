@@ -9,6 +9,7 @@ const storybookConfig: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     'storybook-addon-next-router',
+    '@storybook/addon-a11y',
   ],
   typescript: {
     check: false,
