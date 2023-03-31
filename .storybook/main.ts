@@ -10,6 +10,15 @@ const storybookConfig: StorybookConfig = {
     '@storybook/addon-interactions',
     'storybook-addon-next-router',
   ],
+  typescript: {
+    check: false,
+    checkOptions: {},
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: prop => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+    },
+  },
   framework: {
     name: '@storybook/nextjs',
     options: {
@@ -18,6 +27,15 @@ const storybookConfig: StorybookConfig = {
   },
   docs: {
     autodocs: 'tag',
+  },
+  core: {
+    builder: {
+      name: '@storybook/builder-webpack5',
+      options: {
+        fsCache: true,
+        lazyCompilation: true,
+      },
+    },
   },
 };
 
