@@ -7,8 +7,8 @@ const meta = {
   component: DraftGridContainer,
   tags: ['autodocs'],
   argTypes: {
-    gridWidth: { control: { type: 'range', min: 4, max: 100, step: 1 } },
-    gridHeight: { control: { type: 'range', min: 4, max: 100, step: 1 } },
+    gridWidth: { control: { type: 'range', min: 4, max: 100, step: 4 } },
+    gridHeight: { control: { type: 'range', min: 4, max: 100, step: 4 } },
   },
   args: {
     gridWidth: 32,
